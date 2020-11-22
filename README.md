@@ -1,7 +1,8 @@
 # GB: BigData. Введение в экосистему Hadoop
 > **Geek University Data Engineering**
 
-`Hadoop` `HDFS` 
+`Hadoop` `HDFS` `HDFS via CURL` <br>
+`Python:snakebite` `Python:hdfs` `Python:hdfs3 (libhdfs3)`
 
 ## Урок 1. Введение в Hadoop
 * Hadoop — не база данных<br>
