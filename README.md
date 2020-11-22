@@ -13,14 +13,14 @@
 * Стоит начинать от  10 узлов  
 
 В ходе выполнения домашнего задания зашел по **ssh** на предоставленный кластер с **Hadoop** 
-и выволнил команду `hdfs dfs -ls`. Также ознакомился с интерфейсом **Cloudera Manager**.
+и выполнил команду `hdfs dfs -ls`. Также ознакомился с интерфейсом **Cloudera Manager**.
 
 
 ## Урок 2. HDFS. Архитектура
 * Разобрали особенности хранения данных в файловой системе [HDFS](https://medium.com/@artem_gogin/how-exactly-hadoop-stores-the-data-23da0679d173).
 * Познакомились с основными консольными командами **HDFS** 
 ([FS shell](https://hadoop.apache.org/docs/r2.4.1/hadoop-project-dist/hadoop-common/FileSystemShell.html),
-[HDFS Commands](HDFS Commands))
+[HDFS Commands](https://hadoop.apache.org/docs/r2.7.1/hadoop-project-dist/hadoop-hdfs/HDFSCommands.html))
 
 **Домашнее задание:**
 1. Опробовать консольные утилиты для работы с кластером<br>
@@ -30,10 +30,10 @@
     [] Просмотреть размер любой папки<br>
     [] Посмотреть как файл хранится на файловой системе (см. команду fsck)<br>
     [] Установить нестандартный фактор репликации (см. команду setrep)<br>
-    [Решение](https://github.com/bostspb/hadoop/blob/master/lesson02/cli.md)
+    [Решение](https://github.com/bostspb/hadoop/blob/main/lesson02/cli.md)
 
 2. *Опробовать доступ для работы с кластером<br>
-    [] Используя утилиту CURL - [Решение](https://github.com/bostspb/hadoop/blob/master/lesson02/curl.md) <br>
-    [] Используя python3 - [Решение](https://github.com/bostspb/hadoop/blob/master/lesson02/py3_hdfs.md) <br>
-    [] Используя libhdfs3 - [Решение](https://github.com/bostspb/hadoop/blob/master/lesson02/py_libhdfs3.py) <br>
-    [] Используя snakebite - [Решение](https://github.com/bostspb/hadoop/blob/master/lesson02/py2_snakebite.py) <br>
+    [] Используя утилиту CURL - [Решение](https://github.com/bostspb/hadoop/blob/main/lesson02/curl.md) <br>
+    [] Используя python3 - [Решение](https://github.com/bostspb/hadoop/blob/main/lesson02/py3_hdfs.py) <br>
+    [] Используя libhdfs3 - [Решение](https://github.com/bostspb/hadoop/blob/main/lesson02/py_libhdfs3.py) <br>
+    [] Используя snakebite - [Решение](https://github.com/bostspb/hadoop/blob/main/lesson02/py2_snakebite.py) <br>
