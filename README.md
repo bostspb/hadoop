@@ -1,8 +1,8 @@
 # GB: BigData. Введение в экосистему Hadoop
 > **Geek University Data Engineering**
 
-`Hadoop` `HDFS` `HDFS via CURL` <br>
-`Python:snakebite` `Python:hdfs` `Python:hdfs3 (libhdfs3)`
+`Hadoop` `HDFS` `WebHDFS via CURL` `MapReduce` `YARN`<br>
+`Python:snakebite` `Python:hdfs` `Python:hdfs3 (libhdfs3)` 
 
 ## Урок 1. Введение в Hadoop
 * Hadoop — не база данных<br>
@@ -38,3 +38,45 @@
     [] Используя python3 - [Решение](https://github.com/bostspb/hadoop/blob/main/lesson02/py3_hdfs.py) <br>
     [] Используя libhdfs3 - [Решение](https://github.com/bostspb/hadoop/blob/main/lesson02/py_libhdfs3.py) <br>
     [] Используя snakebite - [Решение](https://github.com/bostspb/hadoop/blob/main/lesson02/py2_snakebite.py) <br>
+
+    
+## Урок 3. MapReduce & YARN
+**Выполнение задач** 
+* **Application** приложение, которое выполняется в Yarn 
+* **Container** единица выделения ресурсов кластера
+
+**Кластер**
+* **Resource manager** Координатор ресурсов кластера. Учитывает только CPU и память
+* **Node Manager** Координатор ресурсов одного узла кластера
+* **ApplicationMaster** Представитель приложения
+
+https://habr.com/ru/company/dca/blog/267361/ <br>
+https://habr.com/ru/company/dca/blog/268277/ <br>
+https://habr.com/ru/post/270453/ <br>
+
+**Домашнее задание:**
+1. **Запустить один-два примера**<br>
+Опробовать запуски `map-reduce` задач для кластера используя `hadoop-mapreduce-examples.jar`. 
+Чтобы увидеть полный список нужно выполнить `yarn jar $YARN_EXAMPLES/hadoop-mapreduce-examples.jar` 
+без параметров.
+
+2. **Изучить интерфейс Resource Manager**<br>
+Выполнить любую задачу включенную в этот `JAR`<br>
+Найти свою задачи в интерфейсе Cloudera Manager<br>
+_Пример:_<br>
+    `YARN_EXAMPLES=/opt/cloudera/parcels/CDH-5.16.2-1.cdh5.16.2.p0.8/lib/hadoop-mapreduce` <br>
+    `yarn jar $YARN_EXAMPLES/hadoop-mapreduce-examples.jar pi 32 20000`
+
+3. **Написать MapReduce-задачу WordCount**<br>
+Опираясь на лекцию написать `WordCount`, используя `Hadoop Streaming` или используя `java`.
+
+4. **Ответить на вопросы**
+*Что такое YARN?<br>
+*Почему задачи на YARN нестабильны?<br>
+Почему Map Reduce долго выполняется?<br>
+Почему Map Reduce не выполняется?<br>
+*Где хранится результат выполнения Map Reduce?<br>
+
+5*. **Написать join на map-reduce**
+
+[Решение](https://github.com/bostspb/hadoop/blob/main/lesson03/lesson03.md)
