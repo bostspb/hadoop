@@ -1,7 +1,7 @@
 # GB: BigData. Введение в экосистему Hadoop
 > **Geek University Data Engineering**
 
-`Hadoop` `HDFS` `WebHDFS via CURL` `MapReduce` `YARN`<br>
+`Hadoop` `HDFS` `WebHDFS` `MapReduce` `YARN` `Hive` `Hue`<br>
 `Python:snakebite` `Python:hdfs` `Python:hdfs3 (libhdfs3)` 
 
 ## Урок 1. Введение в Hadoop
@@ -80,3 +80,15 @@ _Пример:_<br>
 5*. **Написать join на map-reduce**
 
 [Решение](https://github.com/bostspb/hadoop/blob/main/lesson03/lesson03.md)
+
+
+## Урок 4. Apache Hive
+1. Скачать любой датасет из списка ниже с сайта [Kaggle.com](https://www.kaggle.com/) (достаточно большой)
+2. Загрузить этот датасет в `HDFS` в свою домашнюю папку
+3. Создать собственную базу данных в `HIVE`
+4. Создать таблицы внутри базы данных с использованием всех загруженных файлов. 
+Один файл – одна таблица.
+5. Сделать любой отчет по загруженным данным используя групповые и агрегатные функции.
+6. Сделать любой отчет по загруженным данным используя `JOIN`.
+
+[Решение](https://github.com/bostspb/hadoop/blob/main/lesson04/lesson04.md)
