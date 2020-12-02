@@ -131,13 +131,3 @@ SELECT max(oci) FROM lesson5_student9_7.citation_parquet_snapy;
 
 SELECT max(oci) FROM lesson5_student9_7.citation_parquet_uncompressed;
 -- Time taken: 21.617 seconds
-
-
-
-
-"""
-parquet-tools meta hdfs://manager.novalocal:8020/user/hive/warehouse/lesson5_student9_7.db/citation_parquet_gzip/000000_0
-avro-tools getschema hdfs://manager.novalocal:8020/user/hive/warehouse/lesson5_student9_7.db/citation_avro_snapy/000000_0
-avro-tools getmeta hdfs://manager.novalocal:8020/user/hive/warehouse/lesson5_student9_7.db/citation_avro_snapy/000000_0
-hive --orcfiledump /user/hive/warehouse/lesson5_student9_7.db/citation_orc_snapy/000000_0
-"""
