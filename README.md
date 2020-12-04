@@ -1,7 +1,8 @@
 # GB: BigData. Введение в экосистему Hadoop
 > **Geek University Data Engineering**
 
-`Hadoop` `HDFS` `WebHDFS` `MapReduce` `YARN` `Hive` `Hue`<br>
+`Hadoop` `HDFS` `WebHDFS` `MapReduce` `YARN` `Hive` `Hue` `SQOOP` `Flume` <br>
+`PARQUET` `ORC` `AVRO` `SequenceFile` <br>
 `Python:snakebite` `Python:hdfs` `Python:hdfs3 (libhdfs3)` 
 
 ## Урок 1. Введение в Hadoop
@@ -103,3 +104,15 @@ _Пример:_<br>
 6. Сделать выводы о эффективности хранения и компресии.
 
 [Решение](https://github.com/bostspb/hadoop/blob/main/lesson05/lesson05.md)
+
+
+## Урок 6. Загрузка данных. SQOOP. Flume.
+1. Создать отдельную БД в **Hive**
+2. Посмотреть при помощи **SQOOP** содержимое БД в **PostgreSQL** (список таблиц)
+3. Импортировать в нее три любые таблицы из базы `pg_db` в **PostgreSQL** используя **SQOOP**.
+4. Найдите папки на файловой системе куда были сохранены данные. Посмотрите их размер.
+5. Сделайте несколько произвольных запросов к этим таблицам.
+6. **Flume**: Придумать свой скрипт, который генерит выходные данные. 
+7. **Flume**: Запустить свой Flume, прочитать свои данные в **Hive**
+
+[Решение](https://github.com/bostspb/hadoop/blob/main/lesson06/lesson06.md)
