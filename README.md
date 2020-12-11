@@ -1,7 +1,7 @@
 # GB: BigData. Введение в экосистему Hadoop
 > **Geek University Data Engineering**
 
-`Hadoop` `HDFS` `WebHDFS` `MapReduce` `YARN` `Hive` `Hue` `SQOOP` `Flume` <br>
+`Hadoop` `HDFS` `WebHDFS` `MapReduce` `YARN` `Hive` `Hue` `SQOOP` `Flume` `HBase` `Cassandra`<br>
 `PARQUET` `ORC` `AVRO` `SequenceFile` <br>
 `Python:snakebite` `Python:hdfs` `Python:hdfs3 (libhdfs3)` 
 
@@ -116,3 +116,10 @@ _Пример:_<br>
 7. **Flume**: Запустить свой Flume, прочитать свои данные в **Hive**
 
 [Решение](https://github.com/bostspb/hadoop/blob/main/lesson06/lesson06.md)
+
+
+## Урок 7. Виды баз данных. HBase, Cassandra
+* Подключиться к HBase и Cassandra. <br>
+* Создать там таблицы в консоли, вставить записи.
+
+[Решение](https://github.com/bostspb/hadoop/blob/main/lesson07/lesson07.md)
